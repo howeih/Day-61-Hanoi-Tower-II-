@@ -7,6 +7,7 @@ The key observation here is the number of moves in optimal game. For 1 disk, itâ
 Solving n-disk game, transfer n-1 disks to auxiliary rod, move the largest disk and transfer n-1 disks from auxiliary to target rod. Following the induction.
 <br>
 ![Alt text](hanoiII.png?raw=true "hanoi")
+<br>
 The proof also gives a direct solution to the problem. In n-disk game, the largest disk is transferred exactly on move 2^(n-1)! After a single check on moves >= 2 ** (n-1) we immediately know where the largest disk is. And we can proceed recursively on a n-1-disk game.
 <br>
 result:
